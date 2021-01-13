@@ -1,0 +1,121 @@
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+h1{
+    text-align: center;
+}
+.cars{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.top-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.search-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sort-select{
+    padding: 10px;
+}
+.masonry-btns>button.active{
+    background-color: green;
+}
+.filters{
+    width: 19%;
+    border: 1px solid #000;
+}
+.list{
+    width: 79%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.list.col-2>.card{
+    width: 48%;
+}
+.card{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.card-img-wrap{
+    width: 40%;
+    margin-right: 15px;
+    position: relative;
+}
+.card-status-wrap{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.card-status{
+    width: 100px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.card-status.top{
+    background-color: green;
+}
+.card-status.vip{
+    background-color:#246799;
+}
+.card-img{
+    width: 100%;
+    object-fit: cover;
+    max-height: 300px;
+}
+.card-content{
+    flex: 1;
+}
+.card-header-chars{
+    display: flex;
+}
+.card-header-chars>:nth-child(n+2){
+    margin-left: 10px;
+}
+.card-chars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-chars>div{
+    width: 49%;
+}
+.card-vin{
+    display: inline-flex;
+    padding: 5px;
+    border: 1px solid #000;
+}
+.card-consume{
+    display: flex;
+    justify-content: space-between;
+}
+.card-seller{
+    text-decoration: none;
+    font-size: 20px;
+}
+.card-footer{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}

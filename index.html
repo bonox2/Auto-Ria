@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Cars</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>AutoRia sale cars</h1>
+      <hr />
+      <div class="cars">
+        <div class="top-bar">
+          <form class="search-form" id="search-form">
+            <input type="search" name="search">
+            <button type="submit">Find</button>
+          </form>
+          <select id="sort-select" class="sort-select">
+            <option selected disabled>Сортировать...</option>
+            <option value="rating-dec">Сначала популярные</option>
+            <option value="timestamp-dec">Время подачи (по убыв.)</option>
+            <option value="timestamp-inc">Время подачи (по возр.)</option>
+            <option value="price-dec">Цена (по убыв.)</option>
+            <option value="price-inc">Цена (по возр.)</option>
+            <option value="odo-dec">Пробег (по убыв.)</option>
+            <option value="odo-inc">Пробег (по возр.)</option>
+            <option value="year-dec">Год выпуска (по убыв.)</option>
+            <option value="year-inc">Год выпуска (по возр.)</option>
+          </select>
+          <div class="masonry-btns" id="masonry-btns">
+            <button data-action="1" class="btn fas fa-bars active"></button>
+            <button data-action="2" class="btn fas fa-th-large"></button>
+          </div>
+        </div>
+        <div class="filters">Filtering cars</div>
+        <div class="list" id="list">
+          <!-- <article class="card">
+                    <img loading="lazy" src="http://dummyimage.com/153x232.jpg/cc0000/ffffff" alt="Mercedes-Benz S500 2016" class="card-img">
+                    <div class="card-content">
+                        <header class="card-header">
+                            <h4 class="card-title">Mercedes-Benz S500 2016</h4>
+                            <div class="card-header-chars">
+                                <h5 class="card-price">3000$</h5>
+                                <div class="card-color">Brown</div>
+                                <div class="card-location">United States</div>
+                            </div>
+                        </header>
+                        <dl class="card-chars">
+                            <div>
+                                <dt>Fuel type:</dt>
+                                <dd>Benzin</dd>
+                            </div>
+                            <div>
+                                <dt>Engine volume:</dt>
+                                <dd>2.7 L</dd>
+                            </div>
+                            <div>
+                                <dt>Transmossion type:</dt>
+                                <dd>AT</dd>
+                            </div>
+                            <div>
+                                <dt>ODO (km):</dt>
+                                <dd>356585</dd>
+                            </div>
+                        </dl>
+                        <dl class="card-consume">
+                            <div>
+                                <dt>Road:</dt>
+                                <dd></dd>
+                            </div>
+                            <div>
+                                <dt>City:</dt>
+                                <dd></dd>
+                            </div>
+                            <div>
+                                <dt>Mixed:</dt>
+                                <dd></dd>
+                            </div>
+                        </dl>
+                        <div class="card-vin">1G6DW677550624991</div>
+                        <p class="card-text"></p>
+                        <a href="tel:" class="card-seller">John Doe, &#128222; call (+3465465454)</a>
+                        <footer class="card-footer">
+                            <small class="card-time"></small>
+                            <div class="card-actions">
+                                <button class="card-btn wish-btn">&#127775;</button>
+                            </div>
+                        </footer>
+                    </div>
+                </article> -->
+        </div>
+      </div>
+    </div>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <script src="js/cars.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
