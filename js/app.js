@@ -1,3 +1,13 @@
+
+getUsers('js/cars.json')
+
+async function getUsers(url) {
+    const response = await fetch(url)
+    console.log(response);
+    const data = await response.json()
+    console.log(data)
+}
+
 let cars = CARS
 const list = document.getElementById('list')
 const masonryBtns = document.getElementById('masonry-btns')
