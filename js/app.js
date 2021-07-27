@@ -1,13 +1,3 @@
-
-getUsers('js/cars.json')
-
-async function getUsers(url) {
-    const response = await fetch(url)
-    console.log(response);
-    const data = await response.json()
-    console.log(data)
-}
-
 let cars = CARS
 const list = document.getElementById('list')
 const masonryBtns = document.getElementById('masonry-btns')
@@ -78,7 +68,6 @@ searchForm.addEventListener('submit', function (event) {
     addCards(list, cars) 
     
 })
-
 
 
 
@@ -188,8 +177,7 @@ masonryBtns.addEventListener('click', function (event) {
 })
 
 sortSelect.addEventListener('change', event => {
-    // let value = event.target.value // price-dec
-    let [prop, type] = event.target.value.split('-')// ['odo', 'inc']
+   let [prop, type] = event.target.value.split('-')// ['odo', 'inc']
     cars.sort(function (a,b) {
         if (type == 'dec') {
             return b[prop] - a[prop]
